@@ -1,0 +1,143 @@
+{
+  "main": {
+    "id": "3c0d55ce3b9a9ddf",
+    "type": "split",
+    "children": [
+      {
+        "id": "a7cdeb3f9de4cb1a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "category-spring.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "abac7f7ae859c7e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8c8385aaeee91a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9ac22e0ca440c43a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "51a23500eb8fa7e9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bac3b27eb6d9519e",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "79669a18d6dd7965",
+    "type": "split",
+    "children": [
+      {
+        "id": "27b449aa3e07ee02",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77d20901649ad972",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "category-spring.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dd0e290849f11b04",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "category-spring.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "38a5e478148abdfc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "beef527d3746ac47",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "category-spring.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "a7cdeb3f9de4cb1a",
+  "lastOpenFiles": [
+    "category-kotlin.md",
+    "category-jpa.md",
+    "category-java.md",
+    "category-cs.md",
+    "category-categories5.md",
+    "category-categories3.md",
+    "category-categories4.md",
+    "category-categories2.md",
+    "category-categories1.md"
+  ]
+}

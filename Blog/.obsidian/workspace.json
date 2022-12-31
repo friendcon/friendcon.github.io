@@ -1,41 +1,45 @@
 {
   "main": {
-    "id": "84d11a98243df078",
+    "id": "23b0b99047ea191a",
     "type": "split",
     "children": [
       {
-        "id": "18483c04ff259976",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "README.md",
-            "mode": "source",
-            "source": false
+        "id": "a925c7760d244900",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "029c88b24971cd70",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "4f5c2edc9290a9cc",
+    "id": "20a943d20fa5ed8a",
     "type": "split",
     "children": [
       {
-        "id": "feb0c92da3525a35",
+        "id": "79a6dd389b3018df",
         "type": "tabs",
         "children": [
           {
-            "id": "717b095972986590",
+            "id": "c6f3202faa54b945",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
-            "id": "31ed52c489f537f4",
+            "id": "2bd9d358a2836f30",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -50,7 +54,7 @@
             }
           },
           {
-            "id": "39ca3249d92787f5",
+            "id": "fbf2c760162cbdfc",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -61,23 +65,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 201.5
+    "width": 300
   },
   "right": {
-    "id": "7f18a2860e29a56a",
+    "id": "28a37ba2581c8808",
     "type": "split",
     "children": [
       {
-        "id": "beaa800bcd5d3c31",
+        "id": "bbaca87138137ce8",
         "type": "tabs",
         "children": [
           {
-            "id": "8c0ad0c6e341feff",
+            "id": "c26c2b8c9d1c1efe",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,19 +92,18 @@
             }
           },
           {
-            "id": "7ed5ff858f3b2cf1",
+            "id": "cf30a3aa2bd30660",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "324604664bed6af7",
+            "id": "02c88df7cd889b48",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -112,13 +114,11 @@
             }
           },
           {
-            "id": "015b3fa7941bf3e0",
+            "id": "fcf6f6973c2c044b",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -128,17 +128,6 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "18483c04ff259976",
-  "lastOpenFiles": [
-    "무제노트.md",
-    "_pages/categories/category-spring.md",
-    "_pages/categories/category-web.md",
-    "_pages/categories/category-cs.md",
-    "_pages/categories/category-java.md",
-    "_pages/categories/category-jpa.md",
-    "_pages/categories/category-kotlin.md",
-    "_posts/2022-08-22-categories-post-name-here 1.md",
-    "_posts/2022-08-22-categories-post-name-here.md",
-    "_posts/2022-07-24-categories-post-name-here-2.md"
-  ]
+  "active": "029c88b24971cd70",
+  "lastOpenFiles": []
 }

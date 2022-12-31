@@ -1,8 +1,9 @@
 ---
-title: "Hi all! I'm OOOOOO👋🏻"
+title: "🙂 hozumi 의 블로그 🙂"
 permalink: /about/
 layout: single
 comments: false
 ---
 
-본인 소개 여기에 입력
+🙂 공부한 내용을 기록하기 위한 블로그 🙂
+

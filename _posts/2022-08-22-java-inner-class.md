@@ -5,7 +5,7 @@ excerpt: "내부 클래스는 클래스 내부에 선언한 클래스로 외부 
 categories:
   - Java
 tags:
-  - [java, basic]
+  - [Java]
 
 permalink: /java/java-inner-class/
 

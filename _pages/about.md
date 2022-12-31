@@ -1,5 +1,5 @@
 ---
-title: "🙂 hozumi 의 블로그 🙂"
+title: "🙂hozumi 의 블로그 🙂"
 permalink: /about/
 layout: single
 comments: false

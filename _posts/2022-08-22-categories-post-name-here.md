@@ -3,9 +3,9 @@ title: "[Java] 내부 클래스 종류와 유형"
 excerpt: "내부 클래스는 클래스 내부에 선언한 클래스로 외부 클래스와 밀접한 연관이 있는 경우가 많고 다른 외부 클래스에서 사용할 일이 거의 없을 때 사용"
 
 categories:
-  - java
+  - Java
 tags:
-  - [java]
+  - [java, basic]
 
 permalink: /java/java-inner-class/
 

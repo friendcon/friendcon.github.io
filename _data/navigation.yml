@@ -28,3 +28,11 @@ categories:
     url: /categories/jpa/
   - title: "CS"
     url: /categories/cs/
+  - title: "TIL"
+    children:
+      - title: "패스트캠퍼스 강의"
+        url: /categories/fastcampus/
+      - title: "인프런 강의"
+        url: /categories/inflearn/
+      - title: "TIL"
+        url: /categories/til/

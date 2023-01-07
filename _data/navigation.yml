@@ -30,6 +30,8 @@ categories:
     url: /categories/cs/
   - title: "Web"
     url: /categories/web/
+  - title: "Vue"
+    url: /categories/vue/
   - title: "TIL"
     url: /categories/til/
   - title: "패스트캠퍼스"

@@ -30,6 +30,8 @@ categories:
     url: /categories/cs/
   - title: "Web"
     url: /categories/web/
+  - title: "Devops"
+    url: /categories/devops/
   - title: "Vue"
     url: /categories/vue/
   - title: "TIL"

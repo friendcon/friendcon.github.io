@@ -1,0 +1,118 @@
+---
+title: "무중단배포 (1)"
+excerpt: "무중단 배포 가보자고 😎"
+
+categories:
+  - TIL
+tags:
+  - [TIL]
+
+permalink: /category/til/2
+
+toc: true
+toc_sticky: true
+
+date: 2023-01-14
+last_modified_at: 2023-01-14
+---
+## 🦥 도커 설치 명령어
+
+### 🌿 yum 업데이트
+  
+  ```
+  sudo yum update -y
+  ```
+
+### 🌿 도커 설치
+
+  ```
+  sudo yum install docker -y
+  ```
+
+### 🌿 도커 버전 확인
+
+  ```
+  docker -v
+  ```
+
+### 🌿 도커 실행
+
+  ```
+  sudo service docker start
+  ```
+
+### 🌿 도커 설치 확인
+
+  ```
+  sudo docker run hello-world
+  ```
+
+### 🌿 도커를 바로 제어할 수 있도록 도커 그룹에 ec2-user 추가
+
+  ```
+  sudo usermod -aG docker ec2-user
+  ```
+
+## 🦥 Jenkins 설치
+
+### 🌿 젠킨스 최신 이미지 다운
+
+  ```
+  sudo docker pull jenkins/jenkins
+  ```
+
+### 🌿 젠킨스 이미지 실행
+
+  ```
+  $ sudo docker run -d --name jenkins -p 9000:8080 jenkins/jenkins:jdk11
+  ```
+  - 해당 명령어는 외부의(호스트의) 9000 포트를 통해 컨테이너의 8080 포트에 접근하겠다는 뜻!
+  - docker run 옵션에 대해 알아보자
+  
+    - docker run : 컨테이너 실행을 위한 명령어
+    - `-d` : 컨테이너를 백그라운드로 실행
+    - `-p` : 호스트와 컨테이너 포트를 연결. 컨테이너 내부와 외부 포트를 포워딩
+
+      ```
+      -p 9000:8080
+      ```
+      
+      - 9000 포트는 도커를 설치한 호스트 포트
+      - 8080 포트는 도커엔진에 실행되고 있는 컨테이너의 포트
+      - 9000 포트로 접근하면 컨테이너의 8080 으로 포워딩하여 실행되는 젠킨스를 볼 수 있다.
+      
+    - `-e` : 환경변수 설정
+    - `-v 호스트디렉토리:컨테이너디렉토리` : 볼륨 마운트를 통해 도커 컨테이너의 데이터를 보존. 젠킨스 컨테이너의 `/var/jenkins_home` 이라는 디렉토리를 호스트의 `/jenkins` 와 마운트하고 데이터를 보존
+    - --name jenkins : 도커 컨테이너의 이름을 설정
+    - -u root : 컨테이너가 실행될 리눅스의 사용자 계정을 root 로 명시
+
+### 💡 도커의 접속 포트에 알아보기
+
+<img src="https://imgur.com/4HIUplo.png">
+
+
+- -p 9000:8080 개념에 대해 설명을 하자면.. 도커는 게스트 OS 설치 없이 Host OS 에서 단독으로 사용할 수 있는 컨테이너다. 호스트 OS 와 게스트 OS를 사용하기 위해서 호스트 OS 는 9000 포트를 이용하면 게스트 OS 를 사용할 수 있다. 게스트 OS 를 직접 접근을 못하기 때문에 호스트 서버의 포트를 활용하여 게스트 컨테이너 에 접근하고 있다고 보면 될듯하다.. 
+
+- 컨테이너 즉 게스트 OS 인 Jenkins 컨테이너 설정을 직접 못하기 때문에 컨테이너 실행시 -p 9000:8080 설정을 한 것이고 호스트 OS 의 9000 포트를 실행하면 도커 컨테이너의 8080 포트포워딩이 되어 jenkins 설정을 할 수 있게 된다.
+
+### 🌿 젠킨스 설정을 위해 ec2ip:포트 접속
+
+
+<img src="https://imgur.com/LhOnWog.png">
+
+- 해당 포트를 접속하게 되면 다음과 같은 화면이 뜨게된다. 
+
+```
+docker exec <CONTAINER_NAME> cat /var/jenkins_home/secrets/initialAdminPassword
+```
+- 위의 명령어를 실행하면 초기 비밀번호를 얻을 수 있다.
+
+### 🌿 젠킨스 기본 플러그인 설치 후 대시보드 접속
+
+<img src="https://imgur.com/nT5OiAq.png">
+
+- Install suggested plugins 선택 후 기본 플러그인 설치 
+
+<img src="https://imgur.com/Q5zC2h9.png">
+
+- 비밀번호를 입력하고 나면 Jenkins 대시보드에 접속할 수 있게 된다. 

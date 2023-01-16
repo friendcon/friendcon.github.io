@@ -58,7 +58,7 @@ last_modified_at: 2023-01-14
 ### 🌿 젠킨스 최신 이미지 다운
 
   ```
-  sudo docker pull jenkins/jenkins
+  sudo docker pull jenkins/jenkins:lts
   ```
 
 ### 🌿 젠킨스 이미지 실행
